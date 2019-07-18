@@ -127,7 +127,15 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      [
+        "@emotion/babel-preset-css-prop",
+        {
+          "sourceMap": true,
+          "autoLabel": true,
+          "labelFormat": "[filename]--[local]"
+        }
+      ]
     ]
   },
   "devDependencies": {
